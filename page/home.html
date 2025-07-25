@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservasi Bengkel Otomotif</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Bengkel</span> Otomotif</h1>
+        </div>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li class="current"><a href="home.html">Home</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="service.html">Layanan</a></li>
+          </ul>
+          <button id="logout-btn" class="logout-button">Logout</button>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container-bg">
+        <h1>Reservasi Bengkel Profesional</h1>
+        <p>
+          Layanan perawatan dan perbaikan kendaraan dengan teknisi berpengalaman
+        </p>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="reservation-form">
+        <h2>Form Reservasi Bengkel</h2>
+        <form id="reservationform">
+          <div class="form-group">
+            <label for="nama"
+              >Nama Lengkap<span style="color: red">*</span></label
+            >
+            <input type="text" id="nama" name="nama" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email<span style="color: red">*</span></label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="telepon"
+              >Nomor Telepon<span style="color: red">*</span></label
+            >
+            <input type="tel" id="telepon" name="telepon" required />
+          </div>
+
+          <div class="form-group">
+            <label for="kendaraan"
+              >Jenis Kendaraan<span style="color: red">*</span></label
+            >
+            <select id="kendaraan" name="kendaraan" required>
+              <option value="">-- Pilih Jenis Kendaraan --</option>
+              <option value="mobil">Mobil</option>
+              <option value="motor">Motor</option>
+              <option value="truk">Truk/Bus</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="merk"
+              >Merk Kendaraan<span style="color: red">*</span></label
+            >
+            <input type="text" id="merk" name="merk" required />
+          </div>
+
+          <div class="form-group">
+            <label for="model"
+              >Model/Tipe<span style="color: red">*</span></label
+            >
+            <input type="text" id="model" name="model" required />
+          </div>
+
+          <div class="form-group">
+            <label for="tahun"
+              >Tahun Pembuatan<span style="color: red">*</span></label
+            >
+            <input
+              type="number"
+              id="tahun"
+              name="tahun"
+              min="1980"
+              max="2023"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="layanan"
+              >Jenis Layanan<span style="color: red">*</span></label
+            >
+            <select id="layanan" name="layanan" required>
+              <option value="">-- Pilih Layanan --</option>
+              <option value="servis-rutin">Servis Rutin</option>
+              <option value="ganti-oli">Ganti Oli</option>
+              <option value="tune-up">Tune Up</option>
+              <option value="perbaikan-mesin">Perbaikan Mesin</option>
+              <option value="perbaikan-rem">Perbaikan Sistem Rem</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="tanggal"
+              >Tanggal Reservasi<span style="color: red">*</span></label
+            >
+            <input type="date" id="tanggal" name="tanggal" required />
+          </div>
+
+          <div class="form-group">
+            <label for="waktu"
+              >Waktu Reservasi<span style="color: red">*</span></label
+            >
+            <select id="waktu" name="waktu" required>
+              <option value="">-- Pilih Waktu --</option>
+              <option value="08:00-10:00">08:00 - 10:00</option>
+              <option value="10:00-12:00">10:00 - 12:00</option>
+              <option value="13:00-15:00">13:00 - 15:00</option>
+              <option value="15:00-17:00">15:00 - 17:00</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="keluhan">Keluhan/Deskripsi Masalah</label>
+            <textarea id="keluhan" name="keluhan"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Buat Reservasi</button>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <p>Bengkel Otomotif &copy; 2023</p>
+    </footer>
+    <script src="../script/logout.js"></script>
+    <script type="module" src="../script/reservasi.js"></script>
+  </body>
+</html>
