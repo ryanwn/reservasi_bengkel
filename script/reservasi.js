@@ -38,7 +38,9 @@ form.addEventListener("submit", async (e) => {
     console.error("Gagal menyimpan data:", error.message);
     alert("Reservasi gagal dikirim. Silakan coba lagi.");
   } else {
-    alert("Reservasi berhasil dibuat!");
+    alert(
+      "Reservasi berhasil dibuat!\nJika telah lewat 30 menit dari jam yang sudah ditentukan maka reservasi akan di cancel"
+    );
     form.reset();
   }
 });
