@@ -467,6 +467,14 @@ footer {
   background-color: #4caf50;
 }
 
+.btn-save {
+  background-color: #2563eb;
+}
+
+.btn-edit {
+  background-color: #f59e0b;
+}
+
 .btn-cancel {
   background-color: #f44336;
 }
